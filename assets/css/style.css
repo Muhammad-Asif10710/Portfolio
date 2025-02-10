@@ -31,7 +31,7 @@
 
 */
 :root {
-    --primary_color: #28e98c;
+    --primary_color:  #ff0033;
 }
 *,*::before,*::after {
     margin: 0;
@@ -104,7 +104,7 @@ ul {
 }
 .subtitle {
     font-size: 12px;
-    color: #ffffff;
+    color: #ff5733;;
     text-transform: uppercase;
     font-weight: 300;
     margin: 0;
@@ -1080,7 +1080,7 @@ body .body-overlay {
     transition: .3s;
 }
 .portfolio-items .portfolio-item:hover h2 a {
-    border-color: #ffffff;
+    border-color: #2ecc71; 
 }
 
 
