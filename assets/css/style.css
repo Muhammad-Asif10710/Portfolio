@@ -72,7 +72,7 @@ ul {
     margin-left: auto;
 }
 .theme-btn {
-    background: var(--primary_color);
+    background:#28e98c;
     color: #000000;
     display: block;
     text-align: center;
@@ -85,7 +85,7 @@ ul {
     border: none;
     transition: .3s;
     cursor: pointer;
-    border: 2px solid var(--primary_color);
+    border: 2px solid #28e98c;
 }
 .theme-btn i {
     font-size: 24px;
