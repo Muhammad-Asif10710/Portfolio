@@ -1061,9 +1061,8 @@ body .body-overlay {
 }
 .projects-grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
-    justify-content: center;
 }
 .project-card {
     background-color: var(--bg-elevated);
@@ -1072,8 +1071,6 @@ body .body-overlay {
     padding: 30px;
     text-align: center;
     transition: all 0.3s ease;
-    flex: 1 1 300px;
-    max-width: 350px;
     min-height: 420px;
     display: flex;
     flex-direction: column;
