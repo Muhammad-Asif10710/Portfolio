@@ -1054,7 +1054,82 @@ body .body-overlay {
 
 
 
-/* 14 - Portfolio */
+/* 14 - Projects */
+.projects-area {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.project-card {
+    background-color: var(--bg-elevated);
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    flex: 1 1 300px;
+    max-width: 350px;
+}
+.project-card:hover {
+    border-color: var(--primary_color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(79, 125, 243, 0.2);
+}
+.project-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.project-title {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.project-tech {
+    font-size: 0.9rem;
+    color: var(--primary_color);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.project-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.project-link, .github-link {
+    display: inline-block;
+    background-color: var(--primary_color);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+.project-link:hover, .github-link:hover {
+    background-color: var(--accent-primary-hover);
+    transform: translateY(-2px);
+}
+.github-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.link-icon, .github-icon, .external-icon {
+    margin-right: 5px;
+}
+
+
+
+/* 15 - Portfolio */
 .portfolio-area {
     padding-top: 90px;
     padding-bottom: 90px;
