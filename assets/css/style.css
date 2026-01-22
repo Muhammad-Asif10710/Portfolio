@@ -1059,12 +1059,6 @@ body .body-overlay {
     padding-top: 90px;
     padding-bottom: 90px;
 }
-.projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
 .project-card {
     background-color: var(--bg-elevated);
     border: 2px solid var(--border-color);
@@ -1072,12 +1066,12 @@ body .body-overlay {
     padding: 30px;
     text-align: center;
     transition: all 0.3s ease;
-    flex: 1 1 300px;
-    max-width: 350px;
+    width: 100%;
     min-height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 .project-card:hover {
     border-color: var(--primary_color);
