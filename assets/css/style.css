@@ -1074,6 +1074,10 @@ body .body-overlay {
     transition: all 0.3s ease;
     flex: 1 1 300px;
     max-width: 350px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .project-card:hover {
     border-color: var(--primary_color);
