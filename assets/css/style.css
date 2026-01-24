@@ -2325,7 +2325,27 @@ body .body-overlay {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .chat-modal {
-        width: 95%;
+        width: 80%;
         max-height: 90vh;
+        padding: 15px;
+    }
+    .chat-message {
+        font-size: 14px;
+    }
+    .chat-input-container {
+        padding: 8px;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .chat-input {
+        font-size: 13px;
+        flex: 1;
+        min-width: 0;
+    }
+    .chat-send-button,
+    .chat-close-button {
+        padding: 6px 10px;
+        font-size: 12px;
+        flex-shrink: 0;
     }
 }
