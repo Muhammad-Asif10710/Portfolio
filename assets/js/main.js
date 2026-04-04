@@ -32,7 +32,42 @@ $(function(){
             $(".global-color").removeClass("active");
         });
 
+        // Aegis Vision Modal Toggle
+        $(document).on('click', '#aegis-details-btn', function() {
+            $('#aegis-modal').addClass('active');
+        });
+
+        $(document).on('click', '#aegis-close, .aegis-modal-overlay', function(e) {
+            if (e.target === this || $(this).is('#aegis-close')) {
+                $('#aegis-modal').removeClass('active');
+            }
+        });
+
+        $(document).on('keydown', function(e) {
+            if (e.key === 'Escape') {
+                if ($('#aegis-modal').hasClass('active')) {
+                    $('#aegis-modal').removeClass('active');
+                }
+                if ($('#uav-modal').hasClass('active')) {
+                    $('#uav-modal').removeClass('active');
+                }
+            }
+        });
+
+        // UAV Modal Toggle
+        $(document).on('click', '#uav-details-btn', function() {
+            $('#uav-modal').addClass('active');
+        });
+
+        $(document).on('click', '#uav-close, .uav-modal-overlay', function(e) {
+            if (e.target === this || $(this).is('#uav-close')) {
+                $('#uav-modal').removeClass('active');
+            }
+        });
+
     });
+
+
 
     $(window).scroll(function() {
             

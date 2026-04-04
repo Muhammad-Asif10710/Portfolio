@@ -2322,6 +2322,142 @@ body .body-overlay {
     transform: translateY(-1px);
 }
 
+/* Aegis Vision Modal Styles */
+.aegis-details-btn {
+    background: linear-gradient(135deg, var(--accent-secondary), #16A34A);
+    margin-top: 10px;
+}
+
+.aegis-details-btn:hover {
+    background: linear-gradient(135deg, var(--accent-secondary), #15803D);
+    transform: translateY(-2px);
+}
+
+.aegis-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1002;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.aegis-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.aegis-modal {
+    background-color: var(--bg-elevated);
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.aegis-modal-content {
+    padding: 0;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px 20px;
+    border-bottom: 1px solid var(--divider-color);
+    background: var(--bg-secondary);
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--text-primary);
+}
+
+.modal-header h2 span {
+    color: var(--accent-primary);
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    background-color: var(--accent-error);
+    color: white;
+    transform: rotate(90deg);
+}
+
+.modal-body {
+    padding: 30px;
+    color: var(--text-primary);
+}
+
+.modal-body h3 {
+    font-size: 22px;
+    margin: 30px 0 15px 0;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.modal-body h3:first-child {
+    margin-top: 0;
+}
+
+.modal-body p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.modal-body ul {
+    margin: 15px 0 25px 20px;
+}
+
+.modal-body li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.modal-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.modal-video-thumb, .modal-image {
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .chat-modal {
@@ -2329,6 +2465,34 @@ body .body-overlay {
         max-height: 90vh;
         padding: 15px;
     }
+
+    .aegis-modal {
+        width: 95%;
+        max-height: 90vh;
+    }
+
+    .modal-header {
+        padding: 20px;
+    }
+
+    .modal-header h2 {
+        font-size: 24px;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .modal-gallery {
+        flex-direction: column;
+    }
+
+    .modal-video-thumb, .modal-image {
+        max-width: 100%;
+        height: 200px;
+    }
+}
+
     .chat-message {
         font-size: 14px;
     }
@@ -2347,5 +2511,63 @@ body .body-overlay {
         padding: 6px 10px;
         font-size: 12px;
         flex-shrink: 0;
+    }
+}
+
+.uav-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1002;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.uav-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.uav-modal {
+    background-color: var(--bg-elevated);
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.uav-modal-content {
+    padding: 0;
+}
+
+.uav-modal .modal-header {
+    background: var(--bg-secondary);
+    border-radius: 12px 12px 0 0;
+}
+
+.uav-modal .modal-header h2 span {
+    color: var(--accent-secondary);
+}
+
+.uav-modal .modal-body {
+    padding: 30px;
+    color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+    .uav-modal {
+        width: 95%;
+        max-height: 90vh;
     }
 }
