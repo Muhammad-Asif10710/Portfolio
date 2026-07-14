@@ -1372,6 +1372,57 @@ body .body-overlay {
 
 
 
+/* Appointment - always dark mode */
+.appointment-area.always-dark {
+    --bg-primary: #0F1115;
+    --bg-secondary: #161A22;
+    --bg-elevated: #1C2230;
+    --text-primary: #E6EAF0;
+    --text-secondary: #A1A8B3;
+    --text-muted: #6B7280;
+    --border-color: #242A38;
+    --divider-color: #1F2533;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 80px 0 100px;
+}
+
+.light-mode .appointment-area.always-dark {
+    --bg-primary: #0F1115;
+    --bg-secondary: #161A22;
+    --bg-elevated: #1C2230;
+    --text-primary: #E6EAF0;
+    --text-secondary: #A1A8B3;
+    --text-muted: #6B7280;
+    --border-color: #242A38;
+    --divider-color: #1F2533;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.appointment-area.always-dark .section-header h1 {
+    color: #fff;
+}
+
+.appointment-area.always-dark .appointment-content > p {
+    color: var(--text-secondary);
+}
+
+.appointment-area.always-dark .appointment-calendar {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    color-scheme: dark;
+}
+
+.appointment-area.always-dark .appointment-calendar iframe {
+    display: block;
+    border: none;
+    background: var(--bg-secondary);
+}
+
+
 /* 18 - Contact */
 .contact-area {
     padding-bottom: 50px;
@@ -2364,6 +2415,27 @@ body .body-overlay {
     position: relative;
     border: 2px solid var(--border-color);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-primary) var(--bg-elevated);
+}
+
+.aegis-modal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.aegis-modal::-webkit-scrollbar-track {
+    background: var(--bg-elevated);
+    border-radius: 0 12px 12px 0;
+}
+
+.aegis-modal::-webkit-scrollbar-thumb {
+    background: var(--accent-primary);
+    border-radius: 4px;
+    border: 2px solid var(--bg-elevated);
+}
+
+.aegis-modal::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary-hover);
 }
 
 .aegis-modal-content {
