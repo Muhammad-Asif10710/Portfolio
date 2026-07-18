@@ -1060,7 +1060,7 @@ body .body-overlay {
     padding-bottom: 90px;
 }
 .project-card {
-    background-color: var(--bg-elevated);
+    
     border: 2px solid var(--border-color);
     border-radius: 15px;
     padding: 30px;
@@ -1106,7 +1106,7 @@ body .body-overlay {
     background-color: var(--primary_color);
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    
     border-radius: 25px;
     font-weight: 500;
     transition: all 0.3s ease;
