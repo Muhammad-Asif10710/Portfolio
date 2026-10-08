@@ -2688,3 +2688,7 @@ body { font-size: 16px; line-height: 1.75; }
 .left-sidebar > img.me { margin-bottom: 20px; }
 .left-sidebar .address { margin-bottom: 14px; }
 .left-sidebar .social-profile { margin-bottom: 24px; }
+
+/* smaller sidebar buttons */
+.left-sidebar .theme-btn { width: auto; min-width: 160px; padding: 7px 24px; font-size: 13px; }
+.left-sidebar .cv-btn { margin-top: 8px; }
