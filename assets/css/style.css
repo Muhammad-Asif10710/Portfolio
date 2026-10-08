@@ -2685,6 +2685,6 @@ body { font-size: 16px; line-height: 1.75; }
 
 /* compact left sidebar so both buttons sit higher */
 .left-sidebar { padding: 32px; }
-.left-sidebar > img.me { width: 200px; height: 200px; margin-bottom: 20px; }
+.left-sidebar > img.me { margin-bottom: 20px; }
 .left-sidebar .address { margin-bottom: 14px; }
 .left-sidebar .social-profile { margin-bottom: 24px; }
