@@ -1,9 +1,8 @@
 
 $(function(){
 
-    $(window).on('load', function () {
-        $('.page-loader').delay('500').fadeOut(1000);
-    });
+    // hide loader as soon as the page is usable, not after every iframe/image finishes
+    $('.page-loader').fadeOut(300);
 
     $(document).ready(function() {
 
