@@ -1396,14 +1396,6 @@ body .body-overlay {
 
 /* Appointment - always dark mode */
 .appointment-area.always-dark {
-    --bg-primary: #0F1115;
-    --bg-secondary: #161A22;
-    --bg-elevated: #1C2230;
-    --text-primary: #E6EAF0;
-    --text-secondary: #A1A8B3;
-    --text-muted: #6B7280;
-    --border-color: #242A38;
-    --divider-color: #1F2533;
     background: var(--bg-primary);
     color: var(--text-primary);
     padding: 80px 0 100px;
@@ -1431,7 +1423,7 @@ body .body-overlay {
 }
 
 .appointment-area.always-dark .appointment-calendar {
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     overflow: hidden;
@@ -1441,7 +1433,7 @@ body .body-overlay {
 .appointment-area.always-dark .appointment-calendar iframe {
     display: block;
     border: none;
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
 }
 
 
@@ -2673,8 +2665,8 @@ body { font-size: 16px; line-height: 1.75; }
 .resume-timeline .item p { color: var(--text-secondary); }
 /* grouped skills */
 .skill-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-.skill-group { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 22px 24px; }
+.skill-group { background: transparent; border: 1px solid var(--border-color); border-radius: 14px; padding: 22px 24px; }
 .skill-group h3 { font-size: 18px; margin-bottom: 14px; color: var(--text-primary); }
 .skill-group ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; }
-.skill-group li { font-size: 14px; padding: 6px 12px; border-radius: 999px; background: var(--bg-elevated); color: var(--text-secondary); border: 1px solid var(--border-color); }
+.skill-group li { font-size: 14px; padding: 6px 12px; border-radius: 999px; background: transparent; color: var(--text-secondary); border: 1px solid var(--border-color); }
 @media (max-width: 767px) { .skill-groups { grid-template-columns: minmax(0, 1fr); } }
