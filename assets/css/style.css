@@ -2660,7 +2660,7 @@ body .body-overlay {
 
 /* readability */
 body { font-size: 16px; line-height: 1.75; }
-.hero-content p { max-width: 95ch; }
+.hero-content p { max-width: none; }
 .resume-timeline .item p, .service-item p, .project-tech { max-width: 70ch; }
 .project-tech { line-height: 1.7; }
 .resume-timeline .item p { color: var(--text-secondary); }
