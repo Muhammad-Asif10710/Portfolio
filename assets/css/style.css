@@ -2671,3 +2671,10 @@ body { font-size: 16px; line-height: 1.75; }
 .skill-group ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; }
 .skill-group li { font-size: 14px; padding: 6px 12px; border-radius: 999px; background: transparent; color: var(--text-secondary); border: 1px solid var(--border-color); }
 @media (max-width: 767px) { .skill-groups { grid-template-columns: minmax(0, 1fr); } }
+
+/* compact layout: tighter spacing between sections */
+.page-section { padding-top: 48px !important; padding-bottom: 48px !important; margin-top: 0 !important; margin-bottom: 0 !important; min-height: 0 !important; }
+.page-section .section-header { margin-bottom: 28px !important; }
+.hero-section .hero-content h1 { margin-bottom: 24px; }
+.hero-section .hero-content .facts { margin-top: 28px; }
+.appointment-area.always-dark { padding: 48px 0 !important; }
