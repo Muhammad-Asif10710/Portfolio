@@ -32,35 +32,35 @@
 */
 :root {
     /* Dark Mode Colors */
-    --bg-primary: #0F1115;
-    --bg-secondary: #161A22;
-    --bg-elevated: #1C2230;
-    --text-primary: #E6EAF0;
-    --text-secondary: #A1A8B3;
+    --bg-primary: #14171C;
+    --bg-secondary: #191D24;
+    --bg-elevated: #1F242D;
+    --text-primary: #D9DEE5;
+    --text-secondary: #A3ABB6;
     --text-muted: #8B93A1;
-    --accent-primary: #4F7DF3;
-    --accent-primary-hover: #6B95FF;
-    --accent-primary-active: #3B63D1;
+    --accent-primary: #7A9CE8;
+    --accent-primary-hover: #93AFEF;
+    --accent-primary-active: #6286D8;
     --accent-secondary: #22C55E;
     --accent-warning: #F59E0B;
     --accent-error: #EF4444;
     --accent-info: #38BDF8;
-    --border-color: #242A38;
-    --divider-color: #1F2533;
+    --border-color: #2A303A;
+    --divider-color: #232832;
     --primary_color: var(--accent-primary);
 }
 
 .light-mode {
     /* Light Mode Colors */
-    --bg-primary: #FFFFFF;
-    --bg-secondary: #F6F8FC;
-    --bg-elevated: #EEF2F9;
-    --text-primary: #0F172A;
-    --text-secondary: #475569;
+    --bg-primary: #F7F8FA;
+    --bg-secondary: #EFF2F6;
+    --bg-elevated: #E7EBF1;
+    --text-primary: #1E2733;
+    --text-secondary: #4A5565;
     --text-muted: #64748B;
-    --accent-primary: #4F7DF3;
-    --accent-primary-hover: #3B63D1;
-    --accent-primary-active: #2F4FB8;
+    --accent-primary: #4C6FC9;
+    --accent-primary-hover: #3E5FB5;
+    --accent-primary-active: #344F99;
     --accent-secondary: #22C55E;
     --accent-warning: #F59E0B;
     --accent-error: #EF4444;
@@ -1098,7 +1098,7 @@ body .body-overlay {
 .project-card:hover {
     border-color: var(--primary_color);
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(79, 125, 243, 0.2);
+    box-shadow: 0 10px 30px rgba(122, 156, 232, 0.2);
 }
 .project-icon {
     font-size: 3rem;
@@ -2204,7 +2204,7 @@ body .body-overlay {
 .chat-button:hover {
     background: linear-gradient(135deg, var(--accent-primary-active), var(--accent-primary));
     transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(79, 125, 243, 0.3);
+    box-shadow: 0 6px 12px rgba(122, 156, 232, 0.3);
 }
 
 .chat-modal-overlay {
@@ -2308,13 +2308,13 @@ body .body-overlay {
 
 @keyframes shine {
     0% {
-        box-shadow: 0 0 5px rgba(79, 125, 243, 0.5), 0 0 10px rgba(79, 125, 243, 0.3), 0 0 15px rgba(79, 125, 243, 0.2);
+        box-shadow: 0 0 5px rgba(122, 156, 232, 0.5), 0 0 10px rgba(122, 156, 232, 0.3), 0 0 15px rgba(122, 156, 232, 0.2);
     }
     50% {
-        box-shadow: 0 0 10px rgba(79, 125, 243, 0.8), 0 0 20px rgba(79, 125, 243, 0.5), 0 0 30px rgba(79, 125, 243, 0.3);
+        box-shadow: 0 0 10px rgba(122, 156, 232, 0.8), 0 0 20px rgba(122, 156, 232, 0.5), 0 0 30px rgba(122, 156, 232, 0.3);
     }
     100% {
-        box-shadow: 0 0 5px rgba(79, 125, 243, 0.5), 0 0 10px rgba(79, 125, 243, 0.3), 0 0 15px rgba(79, 125, 243, 0.2);
+        box-shadow: 0 0 5px rgba(122, 156, 232, 0.5), 0 0 10px rgba(122, 156, 232, 0.3), 0 0 15px rgba(122, 156, 232, 0.2);
     }
 }
 
@@ -2355,7 +2355,7 @@ body .body-overlay {
 .chat-input:focus {
     outline: none;
     border-color: var(--accent-primary);
-    box-shadow: 0 0 0 3px rgba(79, 125, 243, 0.1);
+    box-shadow: 0 0 0 3px rgba(122, 156, 232, 0.1);
 }
 
 .chat-send-button {
@@ -2665,3 +2665,16 @@ body .body-overlay {
         max-height: 90vh;
     }
 }
+
+/* readability */
+body { font-size: 16px; line-height: 1.75; }
+.hero-content p, .resume-timeline .item p, .service-item p, .project-tech { max-width: 70ch; }
+.project-tech { line-height: 1.7; }
+.resume-timeline .item p { color: var(--text-secondary); }
+/* grouped skills */
+.skill-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.skill-group { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 22px 24px; }
+.skill-group h3 { font-size: 18px; margin-bottom: 14px; color: var(--text-primary); }
+.skill-group ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; }
+.skill-group li { font-size: 14px; padding: 6px 12px; border-radius: 999px; background: var(--bg-elevated); color: var(--text-secondary); border: 1px solid var(--border-color); }
+@media (max-width: 767px) { .skill-groups { grid-template-columns: minmax(0, 1fr); } }
