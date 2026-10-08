@@ -2678,3 +2678,7 @@ body { font-size: 16px; line-height: 1.75; }
 .hero-section .hero-content h1 { margin-bottom: 24px; }
 .hero-section .hero-content .facts { margin-top: 28px; }
 .appointment-area.always-dark { padding: 48px 0 !important; }
+
+/* download CV button under Contact Me */
+.left-sidebar .cv-btn { margin-top: 12px; background: transparent; color: var(--accent-primary); border: 2px solid var(--accent-primary); }
+.left-sidebar .cv-btn:hover { background: var(--accent-primary); color: var(--bg-primary); }
